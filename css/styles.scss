@@ -1,0 +1,133 @@
+html {
+     scroll-behavior: smooth;
+}
+
+nav {
+     font-family: 'Playfair Display', serif;
+     font-size: larger;
+}
+
+a {
+     color: black;
+}
+
+a:link {
+     color: black;
+}
+
+a:visited {
+     color: black;
+}
+
+a:hover {
+     color: rgb(58, 58, 58);
+     text-decoration: none;
+}
+
+.blockquote {
+     font-family: 'Playfair Display', serif;
+     padding-bottom: 1em;
+
+     p {
+          font-size: xx-large;
+     }
+
+     span {
+          font-size: larger;
+     }
+}
+
+h5 {
+     font-weight: bold;
+     font-family: 'Playfair Display', serif;
+     margin-top: 0.5em;
+}
+
+h2 {
+     padding-top: 2em;
+     font-family: 'Playfair Display', serif;
+}
+
+footer {
+     margin-top: 2em;
+}
+
+.card-icon-1 {
+     color: #f89891;
+}
+
+.card-icon-2 {
+     color: #a26d8e;
+}
+
+.card-icon-3 {
+     color: #768fdb;
+}
+
+.card-icon-4 {
+     color: #5fc7be;
+}
+
+
+
+.card-icon-5 {
+     color: #fcd36d;
+}
+
+
+.card-icon-6 {
+     color: #b1dce4;
+}
+
+
+.card-icon-7 {
+     color: #f4cdc5;
+}
+
+.card-icon-8 {
+     color: #c488c1;
+}
+
+.tab {
+     border: 3px solid transparent;
+     transition-duration: 0.5s;
+
+     &:hover {
+          box-shadow: 0 0 1em rgb(238, 238, 238);
+          padding: 1em;
+          opacity: 85%;
+     }
+}
+
+.info {
+     padding: 2em 0;
+}
+
+.info p {
+     margin: 0.5em;
+}
+
+.footer-copyright {
+     background-color: rgb(240, 240, 240);
+}
+
+.offer {
+     margin: 5em 0;
+}
+
+.table {
+     margin: 2em 0;
+}
+
+thead {
+     font-family: 'Playfair Display', serif;
+
+     .table-title {
+
+          font-size: larger;
+     }
+}
+
+#oferta {
+     padding: 50px;
+}
