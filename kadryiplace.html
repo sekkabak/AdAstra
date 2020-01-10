@@ -3,6 +3,7 @@
 <head>
      <meta charset="UTF-8">
      <title>Biuro rachunkowe Ad Astra</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -25,23 +26,25 @@
      <div class="container">
           <header class="blog-header py-3">
                <div class="row flex-nowrap justify-content-between align-items-center">
-                    <div class="col-12 text-center">
-                         <img src="logo/logo-adastra.svg" class="img-fluid" href="index.html" alt="logo" width="300"
-                              height="300">
+                    <div class="col-12 text-center" href="index.html">
+                         <a href="index.html">
+                              <img src="logo/logo.png" class="img-fluid" href="index.html" alt="logo" width="300"
+                                   height="300">
+                         </a>
                     </div>
                </div>
           </header>
 
           <div class="nav-scroller py-1 mb-2 sticky-top bg-white">
                <nav class="nav d-flex justify-content-between mx-5">
-                    <a class="p-2" href="index.html">Strona główna</a>
-                    <a class="p-2" href="cennik">Oferta</a>
+                    <a class="p-2 " href="index.html">Strona główna</a>
+                    <a class="p-2" href="#oferta">Oferta</a>
                     <a class="p-2" href="cennik.html">Cennik</a>
-                    <div class="p-2" onclick="getScrollMax()">Kontakt</div>
+                    <a class="p-2" href="#kontakt">Kontakt</a>
                </nav>
           </div>
           <main>
-               <h2 class="text-center">Kadry i płace</h2>
+               <h3 class="text-center">Kadry i płace</h3>
                <br>
                <p>Wspieramy, pomagamy, prowadzimy pełną dokumentację kadrową i płacową pracowników.</p>
 

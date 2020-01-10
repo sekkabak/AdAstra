@@ -3,6 +3,7 @@
 <head>
      <meta charset="UTF-8">
      <title>Biuro rachunkowe Ad Astra</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -24,16 +25,18 @@
      <div class="container">
           <header class="blog-header py-3">
                <div class="row flex-nowrap justify-content-between align-items-center">
-                    <div class="col-12 text-center">
-                         <img src="logo/logo-adastra.svg" class="img-fluid" href="index.html" alt="logo" width="300"
-                              height="300">
+                    <div class="col-12 text-center" href="index.html">
+                         <a href="index.html">
+                              <img src="logo/logo.png" class="img-fluid" href="index.html" alt="logo" width="300"
+                                   height="300">
+                         </a>
                     </div>
                </div>
           </header>
 
-          <div class="nav-scroller py-1 mb-2 sticky-top bg-white">
+          <div class="nav-scroller py-1 px-5 mb-2 sticky-top bg-white">
                <nav class="nav d-flex justify-content-between mx-5">
-                    <a class="p-2" href="index.html">Strona główna</a>
+                    <a class="p-2 " href="index.html">Strona główna</a>
                     <a class="p-2" href="#oferta">Oferta</a>
                     <a class="p-2" href="cennik.html">Cennik</a>
                     <a class="p-2" href="#kontakt">Kontakt</a>
@@ -72,8 +75,8 @@
                <div class="row">
                     <div class="col-md-12 blog-main">
                          <blockquote class="blockquote m-5 font-italic border-bottom text-center">
-                              <p class="mb-0">„Bądź wzorcem jakości. Niektórzy ludzie nie przywykli do
-                                   środowiska, gdzie oczekuje się doskonałości” </p>
+                              <h4 class="mb-0">„Bądź wzorcem jakości. Niektórzy ludzie nie przywykli do
+                                   środowiska, gdzie oczekuje się doskonałości” </h4>
                               <span class="blockquote-footer">Steve Jobs</span>
                          </blockquote>
                          <div>
@@ -116,23 +119,35 @@
                          </div>
                     </div>
                </div>
-               <div class="row text-center offer" id="oferta">
+               <div class="row text-center offer my-5" id="oferta">
                     <div class="col-lg-3 p-3 tab"><span class="fa-stack fa-3x">
                               <i class="fas fa-circle fa-stack-2x card-icon-1"></i>
                               <i class="fas fa-money-bill-alt fa-stack-1x fa-inverse"></i>
                          </span>
                          <h5>Dotacje</h5>
-                         <p>Skorzystaj na naszym doświadczeniu! Pomagamy uzyskać dotacje na otwarcie
-                              działalności, a także na rozwój i inwestycje Twojej firmy.</p>
-                         <a href="dotacje.html"><button class="btn border">Dowiedz się więcej</button></a>
+                         <p>Skorzystaj na naszym doświadczeniu! Pomagamy uzyskać dotacje na otwarcie działalności, a
+                              także na rozwój i inwestycje Twojej firmy.</p>
+                         <button class="btn border dotacje" type="button" data-toggle="collapse"
+                              data-target="#collapseBlock" aria-expanded="false" aria-controls="collapseBlock">Dowiedz
+                              się
+                              więcej</button>
+                    </div>
+                    <div class="collapse col-lg-9 col-sm-12" id="collapseBlock">
+                         <div class="card card-body border-0">
+                              <p>Skorzystaj na naszym doświadczeniu! Pomagamy uzyskać dotacje na otwarcie działalności,
+                                   a także na rozwój i inwestycje Twojej firmy.</p>
+                              <p>Oferujemy przygotowanie wniosków o dotacje z Urzędu Pracy (dofinansowanie dla
+                                   rozpoczynających działalność gospodarczą oraz dofinansowanie do nowo tworzonego
+                                   miejsca pracy). 
+                                   Pomożemy przygotować wniosek, zrobić Bilans oraz Rachunek zysków i strat.</p>
+                         </div>
                     </div>
                     <div class="col-lg-3 p-3 tab"><span class="fa-stack fa-3x">
                               <i class="fas fa-circle fa-stack-2x card-icon-2"></i>
                               <i class="fas fa-users fa-stack-1x fa-inverse"></i>
                          </span>
                          <h5>Kadry i płace</h5>
-                         <p>Rozliczymy Twoje roczne zaznania podatkowe – PITy. Nie musisz nic załatwiać w Urzędzie
-                              Skarbowym, zeznania wysyłamy online.</p>
+                         <p>Wspieramy, pomagamy, prowadzimy pełną dokumentację kadrową i płacową pracowników. </p>
                          <a href="kadryiplace.html"><button class="btn border">Dowiedz się więcej</button></a>
                     </div>
                     <div class="col-lg-3 p-3 tab"><span class="fa-stack fa-3x">
@@ -149,17 +164,18 @@
                               <i class="fas fa-book fa-stack-1x fa-inverse"></i>
                          </span>
                          <h5>Księgi handlowe</h5>
-                         <p>Rozliczymy Twoje roczne zaznania podatkowe – PITy. Nie musisz nic załatwiać w Urzędzie
-                              Skarbowym, zeznania wysyłamy online.</p>
-                         <a href="ksiegihandlowe.html"><button class="btn border">Dowiedz się więcej</button></a>
+                         <p>Oferujemy prowadzenie ksiąg handlowych zgodnie z przepisami ustawy o rachunkowości z dn.
+                              29.09.1994 r. DZ.U. nr 121 poz. 591 z późniejszymi zmianami.</p>
+                         <button class="btn border">Dowiedz się
+                              więcej</button>
                     </div>
                     <div class="col-lg-3 p-3 tab"><span class="fa-stack fa-3x">
                               <i class="fas fa-circle fa-stack-2x card-icon-5"></i>
                               <i class="fas fa-calculator fa-stack-1x fa-inverse"></i>
                          </span>
-                         <h5>Ryczłt ewidencjonalny</h5>
-                         <p>Rozliczymy Twoje roczne zaznania podatkowe – PITy. Nie musisz nic załatwiać w Urzędzie
-                              Skarbowym, zeznania wysyłamy online.</p>
+                         <h5>Ryczałt ewidencjonowany</h5>
+                         <p>Prowadzimy dokumentację księgową przedsiębiorców korzystających z rozliczeń za pomocą
+                              ryczałtu ewidencjonowanego</p>
                          <a href="ryczalt.html"><button class="btn border">Dowiedz się więcej</button></a>
                     </div>
                     <div class="col-lg-3 p-3 tab"><span class="fa-stack fa-3x">
@@ -167,8 +183,8 @@
                               <i class="fas fa-calendar-alt fa-stack-1x fa-inverse"></i>
                          </span>
                          <h5>Podatkowa księga przychodów i rozchodów</h5>
-                         <p>Rozliczymy Twoje roczne zaznania podatkowe – PITy. Nie musisz nic
-                              załatwiać w Urzędzie Skarbowym, zeznania wysyłamy online.</p>
+                         <p>Oferujemy profesjonalne poprowadzenie Książki Przychodów i Rozchodów, przygotujemy
+                              odpowiednie deklaracje i zadbamy o całość spraw formalnych. </p>
                          <a href="podatkowaksiega.html"><button class="btn border">Dowiedz się więcej</button></a>
                     </div>
                     <div class="col-lg-3 p-3 tab"><span class="fa-stack fa-3x">
@@ -186,28 +202,62 @@
                               <i class="fas fa-handshake fa-stack-1x fa-inverse"></i>
                          </span>
                          <h5>Usługi dodatkowe</h5>
-                         <p>Rozliczymy Twoje roczne zaznania podatkowe – PITy. Nie musisz nic załatwiać w Urzędzie
-                              Skarbowym, zeznania wysyłamy online.</p>
-                         <a href="uslugidodatkowe.html"><button class="btn border">Dowiedz się więcej</button></a>
+                         <p>W ramach świadczonych przez nas usług doradztwa finansowego i księgowego możemy zaoferować
+                              Państwu pomoc w następujących obszarach.</p>
+                         <button type="button" class="btn border" data-toggle="modal" data-target="#myModal">Dowiedz się
+                              więcej</button>
                     </div>
                </div>
           </main>
      </div>
-     <div class="countainer-fluid" id="kontakt">
-          <footer class="bg-light text-center">
+     <div class="countainer-fluid bg-light " id="kontakt">
+          <footer class="text-center pt-2">
                <h2>Kontakt</h2>
-               <div class="info">
-                    <p>Anna Strawa</p>
-                    <p>Sztombergi 100,</p>
-                    <p>28-200 Staszów</p>
-                    <p>tel. 605 318 331</p>
-                    <p>biuroad.astra@wp.pl</p>
+               <div class="my-3">
+                    <span class="d-block">Anna Strawa</span>
+                    <span class="d-block">Sztombergi 100, 28-200 Staszów</span>
+                    <span class="d-block">tel. 605 318 331, biuroad.astra@wp.pl</span>
+
+               </div>
+               <div class="text-center py-2 copyright">© 2020 Copyright: Biuro Rachunkowe Ad Astra Anna Strawa
                </div>
      </div>
-     <div class="footer-copyright copyright text-center py-2">© 2020 Copyright: Biuro Rachunkowe Ad Astra Anna Strawa
-     </div>
+
      </footer>
      <script src="javascript.js"></script>
+     <div class="container">
+
+          <div class="modal fade bd-example-modal-xl" tabindex="-1" id="myModal" role="dialog">
+               <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                         <div class="modal-header">
+                              <button type="button" class="close float-right" data-dismiss="modal">&times;</button>
+                              <main>
+                                   <h2 class="text-center">Rejestracja działalności</h2>
+                                   <br>
+                                   <p>Planujesz działalność? Pomożemy Ci w uruchomieniu działalności gospodarczej.
+                                        Odpowiemy na Twoje
+                                        pytania, załatwimy formalności urzędowe oraz poprowadzimy sprawy księgowe.</p>
+
+                                   <p>Oferujemy pełne wsparcie przy zakładaniu własnej działalności gospodarczej. Jeśli
+                                        masz pomysł na
+                                        biznes – pomożemy Ci zaoszczędzić czas i nerwy. Przeprowadzimy Cię przez proces
+                                        wszystkich
+                                        formalności związanych z założeniem firmy.</p>
+                                   <p>Usługi pomocy przy zakładaniu działalności gospodarczej to przede wszystkim:</p>
+                                   <ul>
+                                        <li>Pomoc w wyborze formy opodatkowania,</li>
+                                        <li>Sporządzenie dokumentów zgłoszeniowych dla nowych podmiotów,</li>
+                                        <li>Pomoc w rejestracji działalności,</li>
+                                        <li>Organizacja księgowości.</li>
+                                   </ul>
+                              </main>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
 </body>
 
 </html>

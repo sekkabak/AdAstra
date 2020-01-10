@@ -1,55 +1,54 @@
-html {
-  scroll-behavior: smooth;
-}
-
 nav {
   font-family: 'Playfair Display', serif;
-  font-size: larger;
+  font-size: x-large;
 }
 
 a {
   color: black;
 }
 
-a:link {
+a a:link {
   color: black;
 }
 
-a:visited {
+a a:visited {
   color: black;
 }
 
-a:hover {
+a a:hover {
   color: #3a3a3a;
   text-decoration: none;
 }
 
 .blockquote {
   font-family: 'Playfair Display', serif;
-  padding-bottom: 1em;
-}
-
-.blockquote p {
-  font-size: xx-large;
 }
 
 .blockquote span {
-  font-size: larger;
+  font-size: large;
 }
 
 h5 {
   font-weight: bold;
   font-family: 'Playfair Display', serif;
-  margin-top: 0.5em;
 }
 
-h2 {
-  padding-top: 2em;
+h3 {
   font-family: 'Playfair Display', serif;
+  margin-top: 1.5em;
 }
 
-footer {
-  margin-top: 2em;
+.chart .col-12 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+}
+
+.chart .col-4, .chart .col-6 {
+  padding: 0.5em;
+}
+
+.chart .th {
+  font-family: 'Playfair Display', serif;
 }
 
 .card-icon-1 {
@@ -97,26 +96,6 @@ footer {
   opacity: 85%;
 }
 
-.info {
-  padding: 2em 0;
-}
-
-.info p {
-  margin: 0.5em;
-}
-
-.footer-copyright {
-  background-color: #f0f0f0;
-}
-
-.offer {
-  margin: 5em 0;
-}
-
-.table {
-  margin: 2em 0;
-}
-
 thead {
   font-family: 'Playfair Display', serif;
 }
@@ -125,7 +104,29 @@ thead .table-title {
   font-size: larger;
 }
 
-#oferta {
-  padding-top: 50px;
+.logo span {
+  font-family: 'Euphoria Script', cursive;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-scroller {
+    display: none;
+  }
+}
+
+.copyright {
+  font-size: 0.6em;
+}
+
+#collapseBlock {
+  border-top: 3px;
+  border-bottom: 3px;
+  border-right: 3px;
+  padding: 1em;
+  opacity: 85%;
 }
 /*# sourceMappingURL=styles.css.map */

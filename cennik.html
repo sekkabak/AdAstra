@@ -3,6 +3,7 @@
 <head>
      <meta charset="UTF-8">
      <title>Biuro rachunkowe Ad Astra</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -25,246 +26,135 @@
      <div class="container">
           <header class="blog-header py-3">
                <div class="row flex-nowrap justify-content-between align-items-center">
-                    <div class="col-12 text-center">
-                         <img src="logo/logo-adastra.svg" class="img-fluid" href="index.html" alt="logo" width="300"
-                              height="300">
+                    <div class="col-12 text-center" href="index.html">
+                         <a href="index.html">
+                              <img src="logo/logo.png" class="img-fluid" href="index.html" alt="logo" width="300"
+                                   height="300">
+                         </a>
                     </div>
                </div>
           </header>
 
-          <div class="nav-scroller py-1 mb-2">
+          <div class="nav-scroller py-1 mb-2 sticky-top bg-white">
                <nav class="nav d-flex justify-content-between mx-5">
                     <a class="p-2" href="index.html">Strona główna</a>
-                    <a class="p-2" href="cennik">Oferta</a>
+                    <a class="p-2" href="#oferta">Oferta</a>
                     <a class="p-2" href="cennik.html">Cennik</a>
-                    <a class="p-2" href="#">Kontakt</a>
+                    <a class="p-2" href="#kontakt">Kontakt</a>
                </nav>
           </div>
-          <main>
-               <div class="row">
-                    <!-- <div class="col-12 text-center">
-                         <div class="table"><img src="/tables/ryczalt.jpg" class="img-fluid"
-                                   alt="Cennik ryczałtu ewidencowanego">
-                         </div>
-                         <div class="table"><img src="/tables/ksiegiHan.jpg" class="img-fluid"
-                                   alt="Cennik księg handlowych">
-                         </div>
-                         <div class="table"><img src="/tables/podatkowa.jpg" class="img-fluid"
-                                   alt="Cennik podatkowej księgi przychodów i rozchodów">
-                         </div>
-                         <div class="table"><img src="/tables/dodatkowe.jpg" class="img-fluid"
-                                   alt="Cennik usług dodatkowych">
-                         </div>
-                         <div class="table"><img src="/tables/niezaleganie.jpg" class="img-fluid"
-                                   alt="Cennik uzyskania zaświadczenia o niezaleganiu">
-                         </div>
+          <div class="row text-center m-1 my-4 chart">
+               <div class="col-12 border p-2">Ryczałt Ewidencjonowany</div>
 
-                    </div> -->
-                    <table class="table text-center border">
-                         <thead>
-                              <tr>
-                                   <th scope="col"></th>
-                                   <th scope="col" class="table-title">Ryczałt Ewidencjonowany</th>
-                                   <th scope="col"></th>
-                              </tr>
-                              <tr>
-                                   <th scope="col">Liczba zapisów </th>
-                                   <th scope="col">Ryczałt bez VAT</th>
-                                   <th scope="col">Ryczałt z VAT</th>
-                              </tr>
-                         </thead>
-                         <tbody>
-                              <tr>
-                                   <td scope="row">Do 10 zapisów</td>
-                                   <td>od 80,00 zł</td>
-                                   <td>od 90,00 zł</td>
-                              </tr>
-                              <tr>
-                                   <td scope="row">Do 20 zapisów</td>
-                                   <td>od 110,00 zł</td>
-                                   <td>od 120,00 zł</td>
-                              </tr>
-                              <tr>
-                                   <td scope="row">Do 30 zapisów</td>
-                                   <td>od 130,00 zł</td>
-                                   <td>od 140,00 zł</td>
-                              </tr>
-                              <tr>
-                                   <td scope="row">Do 40 zapisów</td>
-                                   <td>od 150,00 zł</td>
-                                   <td>od 160,00 zł</td>
+               <div class="col-4 border th">Liczba zapisów </div>
+               <div class="col-4 border th">Ryczałt bez VAT</div>
+               <div class="col-4 border th">Ryczałt z VAT</div>
 
-                              </tr>
-                         </tbody>
-                    </table>
-                    <table class="table text-center border">
-                         <thead>
-                              <tr>
-                                   <th scope="col"></th>
-                                   <th scope="col" class="table-title">Księgi Handlowe</th>
-                                   <th scope="col"></th>
-                              </tr>
-                              <tr>
-                                   <th scope="col">Liczba zapisów </th>
-                                   <th scope="col">Księgi Handlowe bez VAT</th>
-                                   <th scope="col">Księgi Handlowe z VAT</th>
-                              </tr>
-                         </thead>
-                         <tbody>
-                              <tr>
-                                   <td scope="row">Do 5 zapisów</td>
-                                   <td>od 250,00 zł</td>
-                                   <td>od 300,00 zł</td>
-                              </tr>
-                              <tr>
-                                   <td scope="row">Do 10 zapisów</td>
-                                   <td>od 350,00 zł</td>
-                                   <td>od 400,00 zł</td>
-                              </tr>
-                              <tr>
-                                   <td scope="row">Do 30 zapisów</td>
-                                   <td>od 500,00 zł</td>
-                                   <td>od 530,00 zł</td>
-                              </tr>
-                              <tr>
-                                   <td scope="row">Do 50 zapisów</td>
-                                   <td>od 650,00 zł</td>
-                                   <td>od 680,00 zł</td>
-                              </tr>
-                         </tbody>
-                    </table>
+               <div class="col-4 border">Do 10 zapisów</div>
+               <div class="col-4 border">od 80,00 zł</div>
+               <div class="col-4 border">od 90,00 zł</div>
 
-                    <table class="table text-center border">
-                         <thead>
-                              <tr>
-                                   <th scope="col"></th>
-                                   <th scope="col" class="table-title">Podatkowa Księga Przychodów i Rozchodów</th>
-                                   <th scope="col"></th>
-                              </tr>
-                              <tr>
-                                   <th scope="col">Liczba zapisów </th>
-                                   <th scope="col">PKPiR bez VAT</th>
-                                   <th scope="col">PKPiR z VAT</th>
-                              </tr>
-                         </thead>
-                         <tbody>
-                              <tr>
-                                   <td scope="row">Do 5 zapisów</td>
-                                   <td>od 100,00 zł</td>
-                                   <td>od 110,00 zł</td>
-                              </tr>
-                              <tr>
-                                   <td scope="row">Do 10 zapisów</td>
-                                   <td>od 140,00 zł</td>
-                                   <td>od 150,00 zł</td>
-                              </tr>
-                              <tr>
-                                   <td scope="row">Do 30 zapisów</td>
-                                   <td>od 170,00 zł</td>
-                                   <td>od 180,00 zł</td>
-                              </tr>
-                              <tr>
-                                   <td scope="row">Do 40 zapisów</td>
-                                   <td>od 200,00 zł</td>
-                                   <td>od 210,00 zł</td>
-                              </tr>
-                              <tr>
-                                   <td scope="row">Do 50 zapisów</td>
-                                   <td>od 250,00 zł</td>
-                                   <td>od 270,00 zł</td>
-                              </tr>
-                         </tbody>
-                    </table>
+               <div class="col-4 border">Do 20 zapisów</div>
+               <div class="col-4 border">od 110,00 zł</div>
+               <div class="col-4 border">od 120,00 zł</div>
 
-                    <table class="table border">
-                         <thead>
-                              <tr>
-                                   <th scope="col"></th>
-                                   <th scope="row" class="table-title text-center">Usługi dodatkowe</th>
-                                   <th scope="col"></th>
-                              </tr>
-                         </thead>
-                         <tbody>
-                              <tr>
-                                   <td scope="row">Pomoc w założeniu działalności gospodarczej </td>
-                                   <td>bezpłatne</td>
-                              </tr>
-                              <tr>
-                                   <td scope="row">Odbiór dokumentów od klienta</td>
-                                   <td>od 25,00 zł</td>
+               <div class="col-4 border">Do 30 zapisów</div>
+               <div class="col-4 border">od 130,00 zł</div>
+               <div class="col-4 border">od 140,00 zł</div>
 
-                              </tr>
-                              <tr>
-                                   <td scope="row">Obsługa kadrowo-płacowa</td>
-                                   <td>od 30,00 zł</td>
+               <div class="col-4 border">Do 40 zapisów</div>
+               <div class="col-4 border">od 150,00 zł</div>
+               <div class="col-4 border">od 160,00 zł</div>
+          </div>
 
-                              </tr>
-                              <tr>
-                                   <td scope="row">Obsługa zleceniobiorcy</td>
-                                   <td>od 20,00 zł</td>
-                              </tr>
-                              <tr>
-                                   <td scope="row">Przyjmowanie kontroli ZUS i US za okres nieobjęty umową z biurem</td>
-                                   <td>od 50,00 zł/ dzień</td>
-                              </tr>
-                              <tr>
-                                   <td scope="row">Przesyłanie korespondencji w imieniu klienta</td>
-                                   <td>od 10,00 zł</td>
-                              </tr>
-                         </tbody>
-                    </table>
+          <div class="row text-center m-1 my-4 chart">
+               <div class="col-12 border p-2">Księgi Handlowe</div>
 
-                    <table class="table border">
-                         <thead>
-                              <tr>
+               <div class="col-4 border th">Liczba zapisów </div>
+               <div class="col-4 border th">Księgi Handlowe bez VAT</div>
+               <div class="col-4 border th">Księgi Handlowe z VAT</div>
 
-                                   <th scope="row" class="table-title text-center">Uzyskanie zaświadczenia o
-                                        niezaleganiu</th>
+               <div class="col-4 border">Do 5 zapisów</div>
+               <div class="col-4 border">od 250,00 zł</div>
+               <div class="col-4 border">od 300,00 zł</div>
 
-                              </tr>
-                         </thead>
-                         <tbody>
-                              <tr>
-                                   <td scope="row">ZUS</td>
-                                   <td>od 30,00 zł</td>
-                              </tr>
-                              <tr>
-                                   <td scope="row">Urząd Skarbowy </td>
-                                   <td>od 50,00 zł</td>
+               <div class="col-4 border">Do 10 zapisów</div>
+               <div class="col-4 border">od 350,00 zł</div>
+               <div class="col-4 border">od 400,00 zł</div>
 
-                              </tr>
-                              <tr>
-                                   <td scope="row">Sprawozdania GUS od </td>
-                                   <td>od 50,00 zł</td>
+               <div class="col-4 border">Do 30 zapisów</div>
+               <div class="col-4 border">od 500,00 zł</div>
+               <div class="col-4 border">od 530,00 zł</div>
 
-                              </tr>
-                              <tr>
-                                   <td scope="row">Zaświadczenia dla pracowników od</td>
-                                   <td>od 20,00 zł</td>
-                              </tr>
-                         </tbody>
-                    </table>
+               <div class="col-4 border">Do 50 zapisów</div>
+               <div class="col-4 border">od 650,00 zł</div>
+               <div class="col-4 border">od 680,00 zł</div>
+          </div>
 
+          <div class="row text-center m-1 my-4 chart">
+               <div class="col-12 border p-2">Podatkowa Księga Przychodów i Rozchodów</div>
 
+               <div class="col-4 border th">Liczba zapisów </div>
+               <div class="col-4 border th">PKPiR bez VAT</div>
+               <div class="col-4 border th">PKPiR z VAT</div>
 
+               <div class="col-4 border">Do 5 zapisów</div>
+               <div class="col-4 border">od 100,00 zł</div>
+               <div class="col-4 border">od 110,00 zł</div>
 
+               <div class="col-4 border">Do 10 zapisów</div>
+               <div class="col-4 border">od 140,00 zł</div>
+               <div class="col-4 border">od 150,00 zł</div>
 
+               <div class="col-4 border">Do 30 zapisów</div>
+               <div class="col-4 border">od 170,00 zł</div>
+               <div class="col-4 border">od 180,00 zł</div>
 
+               <div class="col-4 border">Do 50 zapisów</div>
+               <div class="col-4 border">od 250,00 zł</div>
+               <div class="col-4 border">od 270,00 zł</div>
+          </div>
 
+          <div class="row my-4 m-1 chart">
+               <div class="col-12 border text-center p-2">Usługi dodatkowe</div>
 
+               <div class="col-6 border">Pomoc w założeniu działalności gospodarczej </div>
+               <div class="col-6 text-center border">bezpłatne</div>
 
+               <div class="col-6 border">Odbiór dokumentów od klienta</div>
+               <div class="col-6 text-center border">od 25,00 zł</div>
 
+               <div class="col-6 border">Obsługa kadrowo-płacowa</div>
+               <div class="col-6 text-center border">od 30,00 zł</div>
+
+               <div class="col-6 border">Obsługa zleceniobiorcy</div>
+               <div class="col-6 text-center border">od 20,00 zł</div>
+
+               <div class="col-6 border">Przyjmowanie kontroli ZUS i US za okres nieobjęty umową z biurem</div>
+               <div class="col-6 text-center border">od 50,00 zł/ dzień</div>
+
+               <div class="col-6 border">Przesyłanie korespondencji w imieniu klienta</div>
+               <div class="col-6 text-center border">od 10,00 zł</div>
+
+               <div class="col-6 border">Przygotowanie polityki rachunkowości oraz zakładowego planu</div>
+               <div class="col-6 text-center border">od 500,00 zł</div>
+
+               <div class="col-6 border">Zamknięcie roku, bilans, rachunek zysków i strat, informacja dodatkowa
                </div>
-               <div class="col-12">
-                    <p>*ceny usług ustalane są indywidualnie, uzależnione są nie tylko od ilości dokumentów, ale również
-                         od formy prawnej, ilości wspólników, ilości pracowników, obrotów, ustalonych raportów i ich
-                         częstotliwości, itp.</p>
-                    <p>**uwaga! Podane ceny stanowią jedynie materiał informacyjny dotyczący kosztów usług. Koszty
-                         ustalane są indywidualnie dla każdego klienta.
-                    </p>
-                    <p>Wszystkie ceny są cenami netto, do któryvh należy doliczyć odpowiedni % podatku VAT.</p>
-               </div>
-          </main>
+               <div class="col-6 text-center border">od 800,00 zł</div>
+
+
+          </div>
+          <div class="col-12 mt-5">
+               <p>*ceny usług ustalane są indywidualnie, uzależnione są nie tylko od ilości dokumentów, ale również
+                    od formy prawnej, ilości wspólników, ilości pracowników, obrotów, ustalonych raportów i ich
+                    częstotliwości, itp.</p>
+               <p>**uwaga! Podane ceny stanowią jedynie materiał informacyjny dotyczący kosztów usług. Koszty
+                    ustalane są indywidualnie dla każdego klienta.
+               </p>
+               <p>Wszystkie ceny są cenami netto, do któryvh należy doliczyć odpowiedni % podatku VAT.</p>
+          </div>
+
      </div>
 
 
