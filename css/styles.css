@@ -1,6 +1,6 @@
 .navbar {
   z-index: 8;
-  font-size: large;
+  font-size: 1.1em;
   color: black;
   opacity: 92%;
 }
@@ -14,8 +14,12 @@ a, a:link, a:visited, a:hover, a:active {
   font-size: large;
 }
 
-h4 {
+h4, h3, .col-md-4 span, h5 {
   font-family: 'Playfair Display', serif;
+}
+
+hr {
+  width: 10%;
 }
 
 .chart .col-12 {
@@ -63,14 +67,6 @@ h4 {
   color: #c488c1;
 }
 
-.fa-circle {
-  width: auto;
-  height: auto;
-  border: 1px solid #111111;
-  border-radius: 50%;
-  padding: 0.04em;
-}
-
 .tab {
   border: 3px solid transparent;
   -webkit-transition-duration: 0.5s;
@@ -110,7 +106,7 @@ thead .table-title {
 .sidebar-contact {
   z-index: 9;
   position: fixed;
-  top: 50%;
+  top: 39%;
   left: -350px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -134,15 +130,13 @@ thead .table-title {
 .toggle {
   position: absolute;
   cursor: pointer;
-  background: #f89891;
+  background: #16701d;
   top: 0;
   right: -48px;
   line-height: 48px;
 }
 
 .toggle:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f0f3";
   color: white;
 }
 
@@ -157,9 +151,8 @@ thead .table-title {
   color: rgba(0, 0, 0, 0.788);
 }
 
-.outer-prof {
+#prof {
   border: 1px solid grey;
-  padding: 0.5em;
 }
 
 @media (max-width: 992px) {
@@ -187,5 +180,65 @@ thead .table-title {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+
+.col-about1 {
+  -webkit-animation: fadeInAnimation ease 2s;
+          animation: fadeInAnimation ease 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.col-about2 {
+  -webkit-animation: fadeInAnimation ease 2s;
+          animation: fadeInAnimation ease 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
+}
+
+.col-about3 {
+  -webkit-animation: fadeInAnimation ease 2s;
+          animation: fadeInAnimation ease 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo {
+  width: 200px;
+  margin-top: 5em;
+}
+
+#kontakt {
+  margin-top: 4em;
 }
 /*# sourceMappingURL=styles.css.map */
